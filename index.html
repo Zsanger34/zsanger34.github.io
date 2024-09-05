@@ -45,21 +45,27 @@
       height: 1000px;
     }
 
-    a {
-      color: #0066cc;
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 18px;
+      color: white;
+      background-color: #007bff;
+      border-radius: 5px;
       text-decoration: none;
-      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .download-button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Zachary Sanger - Resume</h1>
-    <p>If the PDF does not load, <a href="Resume.pdf" target="_blank">click here to download it.</a></p>
+    <a href="Resume.pdf" class="download-button" download="Zachary_Sanger_Resume.pdf">Download Resume</a>
     <iframe src="Resume.pdf" frameborder="0"></iframe>
   </div>
 </body>
